@@ -1,0 +1,451 @@
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  width: 100%;
+}
+body{
+  font-family: Georgia, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin:0;
+  background-color: White;
+  color: MidnightBlue;
+}
+.container{
+  width:100%;
+  height: 100%;
+}
+
+
+h1{
+  font-weight: 800;
+}
+#logo{
+  transform: translate(50px);
+}
+
+
+#mainHeader{
+  padding: 20px;
+  height: 65px;
+  color: MidnightBlue;
+}
+#mainHeader:hover{
+  background-color: MidnightBlue;
+  color: White;
+  transition: all .4s ease;
+}
+
+#navbar{
+  text-align: center;
+}
+#navbar ul{
+  padding: 0;
+  list-style: none;
+}
+
+#navbar li{
+  display: inline;
+  position: relative;
+}
+
+#navbar a{
+  color: inherit;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#navbar a:hover{
+  background: White;
+  color: MidnightBlue;
+  transition: all .4s ease;
+}
+/* Pages */
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+#logo{
+  position: fixed;
+
+}
+
+#logo a{
+  color: inherit;
+  text-decoration: none;
+  border: 2px solid MidnightBlue;
+  padding: 10px;
+  box-sizing: border-box;
+
+  z-index: 100;
+}
+#logo:hover{
+  padding: 10px;
+  box-sizing: border-box;
+  background: MidnightBlue;
+  color: White;
+  transition: all .4s ease;
+}
+/* Home */
+
+.big{
+  color:MidnightBlue;
+  text-align: center;
+  font-size: 100px;
+}
+
+.medium{
+  font-size: 40px;
+}
+
+#mainQuote{
+  transform: translateY(-300px);
+  width: 100%;
+  line-height: 100px;
+  z-index: -100;
+  opacity: 0;
+  transition: opacity .7s .5s ease-out;
+  will-change: opacity;
+}
+
+#mainQuote.is-visible{
+  opacity: 1;
+}
+
+#tjalo{
+  text-align: center;
+  transform: translateY(-300px);
+}
+
+#clockBox{
+  width: 900px;
+  height: 300px;
+  position: absolute;
+  transform: translateY(100px);
+  background-color: MidnightBlue;
+}
+
+#clockText{
+  color: White;
+  transform: translateX(-200px);
+
+}
+
+#clock{
+  color: White;
+  font-size: 150px;
+  float: right;
+  padding-right: 30px;
+  transform: translateY(60px);
+}
+
+/*Mentality portion*/
+#mentalityTitle{
+
+  float: left;
+  transform: translate(-700px, -300px);
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s .3s ease-out, transform 700ms ease-in;
+
+}
+#mentalityTitle.is-visible{
+  transform: translate(-480px, -300px);
+  opacity: 1;
+}
+
+#menTextBox{
+  float:right;
+  transform: translate(700px);
+  height: 800px;
+  width: 600px;
+  background-color: MidnightBlue;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .5s .3s ease-out, transform 700ms ease-in;
+}
+
+#menTextBox.is-visible{
+  transform: translate(480px);
+  opacity: 1;
+}
+
+#menText{
+  color: white;
+  text-align: left;
+  padding: 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#menQuote{
+  color: Black;
+  position: absolute;
+  float: left;
+  width: 29%;
+  transform: translate(-280px);
+  line-height: 40px;
+  z-index: 2;
+}
+
+#musashi{
+  color: MidnightBlue;
+  transform: translateY(15px);
+}
+
+#samuraiPic{
+  transform: translate(-600px, 220px);
+  z-index: -10;
+}
+
+/*Physicality*/
+#physicalityTitle{
+  transform: translateY(-280px);
+  opacity: 0;
+  transition: opacity .5s .3s ease-out, transform 700ms ease-in;
+  position: absolute;
+}
+
+#physicalityTitle.is-visible{
+  opacity: 1;
+  transform: translateY(-350px);
+}
+
+#physBox{
+  position: absolute;
+  height: 700px;
+  width: 600px;
+  background-color: White;
+  border: 3px solid MidnightBlue;
+  transform: translate(-350px, 80px);
+
+}
+
+#physText{
+  color: MidnightBlue;
+  text-align: left;
+  padding: 40px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#bottomText{
+  padding-top: 80px;
+}
+
+#physList{
+  display: block;
+  position: absolute;
+  transform: translate(350px, -10px);
+  line-height: 60px;
+
+}
+
+#physList button{
+  display: block;
+  margin-bottom: 50px;
+  border: none;
+  background-color: white;
+  color: MidnightBlue;
+  font-weight: 600;
+}
+
+#physList button:hover{
+  cursor: pointer;
+  color: MediumBlue;
+}
+#physList button.is-visible{
+  transform: translate(0);
+  opacity: 1;
+}
+
+/* Popups */
+.popup .overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+  display: none;
+}
+
+.popup.active .overlay{
+  display: block;
+}
+
+.popHeader{
+  display: inline;
+  transform: translateX(40%);
+}
+
+.popHeader .close-btn{
+  float: right;
+  transform: translateY(-100px);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.popHeader .close-btn:hover{
+  cursor: pointer;
+}
+
+.popupStack{
+  display: grid;
+}
+
+#popup1, #popup2, #popup3, #popup4, #popup5{
+  grid-column: 1;
+  grid-row: 4;
+}
+.popup .popContent{
+  padding: 20px;
+  position: relative;
+  background: White;
+  width: 700px;
+  height: 300px;
+  z-index: 10;
+
+  transform: scale(0);
+}
+.popup.active .popContent{
+  transition: 800ms ease-in-out;
+  transform: scale(1);
+}
+
+
+
+/* 5 Physicality Animation */
+#phys1{
+  transform: translate(0px);
+  opacity: 0;
+  transition: opacity .4s .2s ease-out, transform 600ms ease-in;
+}
+
+#phys2{
+  transform: translate(-80px);
+  opacity: 0;
+  transition: opacity .5s .3s ease-out, transform 700ms ease-in;
+}
+
+#phys3{
+  transform: translate(-80px);
+  opacity: 0;
+  transition: opacity .6s .4s ease-out, transform 800ms ease-in;
+}
+
+#phys4{
+  transform: translate(-80px);
+  opacity: 0;
+  transition: opacity .7s .5s ease-out, transform 900ms ease-in;
+}
+
+#phys5{
+  transform: translate(-80px);
+  opacity: 0;
+  transition: opacity .8s .6s ease-out, transform 1000ms ease-in;
+}
+
+/*Daily Routine*/
+#dailyTitle{
+  position: absolute;
+  transform: translateY(-420px);
+  opacity: 0;
+  transition: opacity .5s .3s ease-out, transform 700ms ease-in;
+}
+
+#dailyTitle.is-visible{
+  transform: translateY(-350px);
+  opacity: 1;
+}
+
+#dailyBorderBox{
+  height: 720px;
+  width: 500px;
+  transform: translate(-420px, 100px);
+  border: 3px solid MidnightBlue;
+  opacity: 0;
+  transition: opacity .7s .5s ease-out, transform 800ms ease-in;
+}
+
+#dailyBorderBox.is-visible{
+  transform: translate(-350px, 100px);
+  opacity: 1;
+}
+
+#dailySolidBox{
+  position: absolute;
+  height: 720px;
+  width: 500px;
+  transform: translate(420px, 100px);
+  background-color: MidnightBlue;
+  border: 3px solid MidnightBlue;
+  opacity: 0;
+  transition: opacity .7s .5s ease-out, transform 800ms ease-in;
+}
+
+#dailySolidBox.is-visible{
+  transform: translate(350px, 100px);
+  opacity: 1;
+}
+
+#solidText{
+  color: White;
+  float: left;
+  padding: 30px;
+  text-align: left;
+}
+
+#borderText{
+  display: flex;
+  float: left;
+  padding: 20px;
+  padding-left: 10px;
+}
+
+#borderText ul{
+  display: block;
+  list-style: none;
+}
+
+#times li{
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#todos{
+  transform: translateX(40px);
+  position: relative;
+  float: right;
+}
+
+#todos li{
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+#aboutTitle{
+  position: relative;
+
+}
+
+#aboutTextBox{
+  position: relative;
+  height: 400px;
+  width: 800px;
+  font-size: 20px;
+}

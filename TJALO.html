@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+  <div class="container">
+  <head>
+    <title>TJ Alo</title>
+    <link rel="stylesheet" type="text/css" href="TJALO.css">
+  </head>
+
+  <body onload="realTimeClock()">
+    <div id="wrapper">
+      <header id="mainHeader">
+          <h1 id="logo"><a href="#">TJ ALO</a></h1>
+
+          <nav id="navbar">
+              <ul>
+                <li><a href="#home" class="animation current">Home</a></li>
+                <li><a href="#mentality" class="animation current">Mentality</a></li>
+                <li><a href="#physicality" class="animation current">Physicality</a></li>
+                <li><a href="#daily" class="animation current">Daily Routine</a></li>
+                <li><a href="#aboutMe" class="animation current">About Me</a></li>
+              </ul>
+          </nav>
+
+      </header>
+    </div>
+
+      <section id="home">
+        <div id="mainQuote" class="appear">
+          <h1 class="big">"I don't stop when I'm tired. I stop when I'm done."</h1>
+        </div>
+        <div id="tjalo">
+          <h2 class="medium">-David Goggins<h2>
+        </div>
+        <div id="clockBox">
+          <h2 id="clockText">Time to start doing something: </h2>
+          <div id="clock"></div>
+        </div>
+      </section>
+
+      <section id="mentality">
+        <h1 class="big appear" id="mentalityTitle">Mentality</h1>
+        <div id="menTextBox" class="appear">
+          <div id="menText">
+            <p>Your mental is like a muscle; you must strain this muscle through
+            doing rigorous activies in order to grow and callus the muscle. To do
+            so, start by doing something immediately challenging in the morning.
+            The brain wants to do absolutely nothing in the morning. The brain
+            wants to go back to sleep. This is a perfect opportunity to make it
+            suffer. I hate running so the first thing I do in the morning is run
+            at least 2 miles. This wakes up my brain and forces it to focus as
+            the outside is still dark and I am terribly near-sighted. If the toughest
+            part of the day is conquered early, the rest of the day pales in comparison.
+            </p>
+
+            <p>You must also consider a state of mind popularized by David Goggins:
+            the Dog Mentality; literally equate yourself to a dog. A dog will continue
+            its goal until it can no longer physically continue.
+            A pitbull will bite down onto something so hard it will lock its jaws.
+            Hachi the Akita Inu waited for his dead master until he too died.
+            My dog ate grass until she threw up and continued to eat grass. The
+            moral of these stories is that you must continue to claw your way
+            towards your goals until you can not no longer physically continue.
+            Every single day.</p>
+          </div>
+        </div>
+        <h2 class="medium" id="menQuote">
+          "To think of everything as a chance to cut your opponent down is crucial"
+          <div id="musashi">-Miyamoto Musashi</div>
+        </h2>
+        <img id="samuraiPic"src="SamuraiHelmet.jpg" width="400" length="400"></img>
+      </section>
+
+
+      <section id="physicality">
+        <h1 class="big appear" id="physicalityTitle">Physicality</h1>
+        <div id="physBox">
+          <div id="physText">
+            <p>
+              Your body must be as sharp as your brain. A 140 IQ is useless in
+            a body that will die by the age of 40. You must train your body to
+            to be able to do anything; Able to fight, able to lift, able to
+            run, and able to sustain pain. But most importantly, your body must
+            be able to sustain a life of aging and working. If all your body does
+            is sit down and type on a keyboard, this is all your body knows. Your
+            mind can be infinitely powerful but will be worth nothing if the
+            vessel that holds it is a fat, high insulin body. Note this extensively.
+            </p>
+            <p id="bottomText">
+              The following categories of physical fitness on the right are the five main areas
+              of focus when wanting to improve the body. You can click on each to
+              read more.
+            </p>
+          </div>
+        </div>
+
+      <div class="popupStack">
+        <div class="popup" id="popup1">
+          <div class="overlay"></div>
+          <div class="popContent">
+            <div class="popHeader">
+              <h2 class="popTitle medium">Water</h2>
+              <div class="close-btn" onclick="togglePopup1()">&times;</div>
+            </div>
+            <p>
+                The only liquid you should be drinking is water (protein shake may
+              be an exception). Other drinks either have too much processed sugar
+              or too much calories or even worse, both. Though black coffee has
+              its benefits, I see anything with caffeine as a cheat for energy. If
+              I need energy, I choose to run off pure adrenaline. Water has overwhelming
+              benefits and little to no negatives. Water clears the body of liquid waste,
+              clears the skin, eliminates bloating and water weight, and hydrates the body.
+              Drink water until your urine is clear.
+            </p>
+          </div>
+        </div>
+
+        <div class="popup" id="popup2">
+          <div class="overlay"></div>
+          <div class="popContent">
+            <div class="popHeader">
+              <h2 class="popTitle medium">Intermittent Fasting</h2>
+              <div class="close-btn" onclick="togglePopup2()">&times;</div>
+            </div>
+            <p>
+                Intermittent fasting is great for two things: energy and fat loss.
+              When working out, especially doing cardio, on a fast the body is given
+              a tremendous amount of energy. I do not know whether it's the body
+              going back into a primitive state of starving and hunting or some other
+              semi-believable reason but doing a run, boxing, or lifting weights seems
+              to be more explosive and feel better when on a fast. In contrast, if I
+              eat a meal before working out, I feel bloated and lethargic due to by
+              body still digesting food. As for fat loss (unless overcompensating during
+              meal time), the body will go into a caloric deficit in a fast meaning fat
+              loss is bound to happen. There are much more benefits to intermittent
+              fasting but these are the benefits I found useful in my life.
+            </p>
+          </div>
+        </div>
+
+        <div class="popup" id="popup3">
+          <div class="overlay"></div>
+          <div class="popContent">
+            <div class="popHeader">
+              <h2 class="popTitle medium">Combat Sport</h2>
+              <div class="close-btn" onclick="togglePopup3()">&times;</div>
+            </div>
+            <p>
+              Everyone should know how to fight. Fighting should be a necessity.
+            Simply learning how to throw a punch and how to know when someone is
+            going to throw a punch is crucial. But from less of a violence perspective,
+            fighting is great for physical fitness. Fighting trains the whole body
+            and develops different parts of the body; there is a major difference
+            between being in shape and being in fighting shape. For me personally,
+            fighting requires both the mind and body to be highly active
+            simultaneously and so unlike other workouts, keeps me stimulated. Just
+            knowing you can practically beat up 90% of people is supreme confidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="popup" id="popup4">
+          <div class="overlay"></div>
+          <div class="popContent">
+            <div class="popHeader">
+              <h2 class="popTitle medium">Cardio</h2>
+              <div class="close-btn" onclick="togglePopup4()">&times;</div>
+            </div>
+            <p>
+              Like mentioned before, I hate running and hate brainless cardio
+            in general. Though forcing yourself to do things that hard but benefitial
+            to you physically, benefits you mentally. Cardio raises the heart rate
+            and requires lots of oxygen which makes your body perform aerobic respiration.
+            Aerobic exercise in general uses fat for fuel making the body lean. Cardio is
+            great for endurance in physical activities such as boxing and playing basketball.
+            Cardio, though most times mundane, has so much use for the body and its ability
+            to perform.
+           </p>
+          </div>
+        </div>
+
+        <div class="popup" id="popup5">
+          <div class="overlay"></div>
+          <div class="popContent">
+            <div class="popHeader">
+              <h2 class="popTitle medium">Resistance Training</h2>
+              <div class="close-btn" onclick="togglePopup5()">&times;</div>
+            </div>
+            <p>Finally, resistance training whether with weights or calisthenics,
+            is the holy grail for strength and conditioning. The body must have the
+            strength to hit hard, explode off of either leg, and lift and throw heavy
+            objects. Strength and conditioning elevates every other physical activity
+            as your body can withstand more rigorous training.
+            And at the end of the day, resistance training grows muscles
+            and just makes the body look good. A confidence in your body is almost
+            unmatched. When you look good, you feel good, and when you feel good
+            you perform everything else at a higher level. I would be damned if I put my
+            body through hell and didn't look good doing it.</p>
+          </div>
+        </div>
+
+      </div>
+
+        <div id="physList">
+          <button onclick="togglePopup1()" class="medium appear" id="phys1">Water</button>
+          <button onclick="togglePopup2()" class="medium appear" id="phys2">Intermittent Fasting</button>
+          <button onclick="togglePopup3()" class="medium appear" id="phys3">Combat Sport</button>
+          <button onclick="togglePopup4()" class="medium appear" id="phys4">Cardio</button>
+          <button onclick="togglePopup5()" class="medium appear" id="phys5">Resistance Training</button>
+        </div>
+      </section>
+
+      <section id="daily">
+        <h1 class="big appear" id="dailyTitle">Daily Routine</h1>
+        <div id="boxes">
+          <div id="dailySolidBox" class="appear">
+            <div id="solidText">
+              <p>
+                My daily routine is nothing special. I essentially wake up, workout,
+                and work. However, I hope to continue to my good habit of doing
+                something painfully hard in the morning. Like mentioned before,
+                conquering something hard first thing in the morning sets the tone
+                for the rest of the day. Just knowing that I chose to get out of
+                bed and run rather than lay in bed is such a mental boost.
+              </p>
+              <p>
+                As for the rest of the day, my primary goal is to get shit done.
+                Though the schedule looks repetitive, the work I do ranges from
+                coding, going to classes, or other chores giving me a variety
+                goals to accomplish throughout the day. My goal for each and every
+                day is to be able to destroy the version of myself yesterday. I want
+                to be smarter than who I was yesterday. I want to be able to be stronger
+                and faster than who I was yesterday. I want to be able to fight and kill
+                the person I was yesterday. Progression is my motivation.
+              </p>
+              <p>As for the reading and meditation, I believe it is good for the
+                mind to be absolutely clear before going to bed. Using your phone
+                or computer before sleeping emitts a ton of blue light is bad for
+                sleep quality and benefits of good sleep are endless. So clearing
+                the mind and disconnecting it from the outside world before going
+                to bed is paramount.
+              </p>
+            </div>
+          </div>
+          <div id="dailyBorderBox" class="appear">
+            <div id="borderText">
+              <ul id="times">
+                <li>6:00 AM</li>
+                <li>7:00 AM</li>
+                <li>8:00 AM</li>
+                <li>9:00 AM</li>
+                <li>10:00 AM</li>
+                <li>11:00 AM</li>
+                <li>12:00 PM</li>
+                <li>1:00 PM</li>
+                <li>2:00 PM</li>
+                <li>3:00 PM</li>
+                <li>4:00 PM</li>
+                <li>5:00 PM</li>
+                <li>6:00 PM</li>
+                <li>7:00 PM</li>
+                <li>8:00 PM</li>
+              </ul>
+              <ul id="todos">
+                <li>Run and workout</li>
+                <li>Get ready & Spanish lesson</li>
+                <li>Work</li>
+                <li>Work</li>
+                <li>Work</li>
+                <li>Work</li>
+                <li>Lunch</li>
+                <li>Work</li>
+                <li>Work</li>
+                <li>Work</li>
+                <li>Work</li>
+                <li>Work</li>
+                <li>Dinner</li>
+                <li>Read and/or Meditate</li>
+                <li>Relax until sleep</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutMe">
+        <h1 class="big" id="aboutTitle">About Me</h1>
+          <div id="aboutTextBox">
+            <p>
+              I made the website for two things: a website to showcase sweet
+              web development animations and to hold myself accountable. These are
+              the values I want to follow and if these values are put on the Internet, it
+              would be dishonorable to not abide by them. If I talk all this talk about
+              being productive and motivated, then in turn I must walk the walk as well.
+              Currently, I am nobody. I am no where near the goals I have set but I hope
+              with these core values, I can get somewhere.
+            </p>
+        </div>
+      </section>
+    <div>
+    <script src="TJALO.js"></script>
+  </body>
+
+</html>
